@@ -9,5 +9,7 @@ import javax.annotation.Resource;
 @Mapper
 public interface UserMapper {
 
-    User selectById(String id);
+    User selectById(String username);
+
+    int save(User newUser);
 }

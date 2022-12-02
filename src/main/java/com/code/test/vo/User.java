@@ -12,7 +12,11 @@ import java.util.Set;
 @Setter
 public class User {
     private String username;
+    private String phone;
+    private String email;
     private String password;
+    private String role;
+
 
 
 }

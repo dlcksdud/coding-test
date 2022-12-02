@@ -6,11 +6,22 @@
 
     <select id="selectById" resultType="com.code.test.vo.User">
         SELECT
-            ID,
-            PASSWORD
-        FROM users
+            *
+        FROM userinfo
         WHERE 1 = 1
-            AND ID = #{id}
+            AND USERNAME = #{username}
 
     </select>
+
+    <insert id="save" parameterType="com.code.test.vo.User">
+        INSERT INTO userinfo (
+            NAME,
+            PASSWORD,
+            ROLE
+        ) VALUES (
+            #{username},
+            #{password},
+            #{role}
+        )
+    </insert>
 </mapper>

@@ -5,8 +5,12 @@ spring:
     username: chnops1
     password: chnops1234
 
-  jpa:
-    hibernate:
-      ddl-auto: update
+## Mybatis Setting ##
+mybatis:
+  type-aliases-package: com.code.test
+  mapper-locations: mapper/**/*.xml
+  configuration:
+    map-underscore-to-camel-case: true
+
 jwt:
   secret: fdjkasljfkdlasjkfljdkajfkdlasjkfljkasljfkldjsakljfkdlasjfklsljfkldasjklfjdkasljfkldasjkl
