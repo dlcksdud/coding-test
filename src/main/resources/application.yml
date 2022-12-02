@@ -1,0 +1,12 @@
+spring:
+  datasource:
+    driver-class-name: org.mariadb.jdbc.Driver
+    url: jdbc:mariadb://211.37.173.118:3306/iomt_portal
+    username: chnops1
+    password: chnops1234
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+jwt:
+  secret: fdjkasljfkdlasjkfljdkajfkdlasjkfljkasljfkldjsakljfkdlasjfklsljfkldasjklfjdkasljfkldasjkl
